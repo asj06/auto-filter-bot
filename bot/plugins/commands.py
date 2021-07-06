@@ -1,7 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# (c) @AlbertEinsteinTG
-
 from pyrogram import filters, Client
 from pyrogram.types import InlineKeyboardButton, InlineKeyboardMarkup, CallbackQuery
 from bot import Translation # pylint: disable=import-error
@@ -34,14 +30,11 @@ async def start(bot, update):
                 parse_mode="html",
                 reply_to_message_id=update.message_id,
                 reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton
-                                (
-                                    'Developers', url="https://t.me/CrazyBotsz"
-                                )
-                        ]
-                    ]
+                   reply_markup=InlineKeyboardMarkup(
+                    [[InlineKeyboardButton('🍁 Join Channel', url="https://telegram.me/StreamingFreaks")],[
+                        InlineKeyboardButton('❣ Our Group ', url="https://telegram.me/movies_at_streamingfreaks")
+                     ]]
+                )
                 )
             )
 
@@ -53,14 +46,9 @@ async def start(bot, update):
                 caption = caption,
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
-                    [
-                        [
-                            InlineKeyboardButton
-                                (
-                                    'Developers', url="https://t.me/CrazyBotsz"
-                                )
-                        ]
-                    ]
+                    [[InlineKeyboardButton('🍃 Join Channel', url="https://telegram.me/StreamingFreaks")],[
+                        InlineKeyboardButton('😎 Our Group ', url="https://telegram.me/movies_at_streamingfreaks")
+                     ]]
                 )
             )
             
@@ -76,7 +64,7 @@ async def start(bot, update):
                         [
                             InlineKeyboardButton
                                 (
-                                    'Developers', url="https://t.me/CrazyBotsz"
+                                    '🌳 Father', url="https://Telegram.me/Amogh_06"
                                 )
                         ]
                     ]
@@ -89,12 +77,10 @@ async def start(bot, update):
         return
 
     buttons = [[
-        InlineKeyboardButton('Developers', url='https://t.me/CrazyBotsz'),
-        InlineKeyboardButton('Source Code 🧾', url ='https://github.com/CrazyBotsz/Adv-Auto-Filter-Bot-V2')
-    ],[
-        InlineKeyboardButton('Support 🛠', url='https://t.me/CrazyBotszGrp')
-    ],[
-        InlineKeyboardButton('Help ⚙', callback_data="help")
+        InlineKeyboardButton('My Boss 🙂', url='https://telegram.me/amogh_06'),
+        InlineKeyboardButton('StreamingFreaks 🎃', url='https://telegram.me/StreamingFreaks'),
+    
+        InlineKeyboardButton('Contact', callback_data="help")
     ]]
     
     reply_markup = InlineKeyboardMarkup(buttons)
