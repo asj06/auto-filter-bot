@@ -25,7 +25,7 @@ class Translation(object):
     
     ABOUT_TEXT = """▪ <i>Spiddy Movie Bot</i>
     
-🔸<b>Creater :</b> @AvishkarPatil
+🔸<b>Creater :</b> @Amogh_06
 🔹<b>Language :</b> <code>Python3</code>
 🔸<b>Follow Me :</b> <a href='https://Instagram.com/proavipatil'>Instagram</a> 
 """
