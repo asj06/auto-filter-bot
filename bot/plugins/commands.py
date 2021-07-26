@@ -32,7 +32,7 @@ async def start(bot, update):
                 reply_markup=InlineKeyboardMarkup(
                    reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton('🍁 Join Channel', url="https://telegram.me/StreamingFreaks")],[
-                        InlineKeyboardButton('❣ Our Group ', url="https://telegram.me/movies_at_streamingfreaks")
+                        InlineKeyboardButton('❣ Our Group ', url="https://telegram.me/SF_Request")
                      ]]
                 )
                 )
@@ -47,7 +47,7 @@ async def start(bot, update):
                 parse_mode="html",
                 reply_markup=InlineKeyboardMarkup(
                     [[InlineKeyboardButton('🍃 Join Channel', url="https://telegram.me/StreamingFreaks")],[
-                        InlineKeyboardButton('😎 Our Group ', url="https://telegram.me/movies_at_streamingfreaks")
+                        InlineKeyboardButton('😎 Our Group ', url="https://telegram.me/SF_Request")
                      ]]
                 )
             )
